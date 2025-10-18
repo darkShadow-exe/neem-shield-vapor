@@ -49,30 +49,7 @@ const Impact = () => {
           </div>
 
           {/* Testimonial */}
-          <div className="bg-card rounded-xl p-8 lg:p-12 shadow-sm border border-border">
-            <div className="flex flex-col md:flex-row gap-8 items-center">
-              <div className="flex-1">
-                <div className="text-accent mb-4">
-                  <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                  </svg>
-                </div>
-                <p className="text-xl text-foreground mb-6 leading-relaxed">
-                  "पहले मैं महीने में तीन बार स्प्रे करता था। अब सिर्फ एक बार NeemShield बांधता हूं। 
-                  बारिश में भी काम करता है। मेरी फसल स्वस्थ है, मिट्टी भी।"
-                </p>
-                <div>
-                  <p className="font-semibold text-foreground text-lg">राजेश कुमार</p>
-                  <p className="text-muted-foreground">धान किसान, बिहार</p>
-                </div>
-              </div>
-              <div className="w-full md:w-auto">
-                <div className="w-48 h-48 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Users className="w-24 h-24 text-primary/30" />
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
