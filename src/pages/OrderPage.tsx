@@ -9,20 +9,10 @@ const OrderPage = () => {
 
   const pricingData = [
     {
-      id: "single",
-      name: "Single Unit",
-      units: "1 Band",
-      retail: 2.0,
-      description: "Perfect for testing or small gardens",
-      highlight: false,
-    },
-    {
       id: "small",
       name: "Small Pack",
       units: "10 Bands",
-      retail: 18.0,
-      wholesale: 15.0,
-      bulk: { price: 12.0, condition: "100+ packs" },
+      retail: 15.0,
       description: "Ideal for home gardeners",
       highlight: false,
     },
@@ -31,20 +21,8 @@ const OrderPage = () => {
       name: "Standard Pack",
       units: "25 Bands",
       retail: 40.0,
-      wholesale: 32.0,
-      bulk: { price: 28.0, condition: "200+ packs" },
       description: "Most popular for small farms",
       highlight: true,
-    },
-    {
-      id: "orchard",
-      name: "Orchard Pack",
-      units: "50 Bands",
-      retail: 75.0,
-      wholesale: 60.0,
-      bulk: { price: 50.0, condition: "500+ packs" },
-      description: "Great for orchards and cooperatives",
-      highlight: false,
     },
   ];
 
@@ -78,7 +56,7 @@ const OrderPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
               {pricingData.map((pack) => (
                 <div
                   key={pack.id}
@@ -104,22 +82,7 @@ const OrderPage = () => {
                     <div className="text-3xl font-bold text-foreground mb-1">
                       AED {pack.retail}
                     </div>
-                    <p className="text-xs text-muted-foreground">Retail Price</p>
                   </div>
-
-                  {pack.wholesale && (
-                    <div className="mb-3 pb-3 border-b border-border">
-                      <div className="text-sm font-semibold text-accent">AED {pack.wholesale}</div>
-                      <p className="text-xs text-muted-foreground">Wholesale</p>
-                    </div>
-                  )}
-
-                  {pack.bulk && (
-                    <div className="mb-4">
-                      <div className="text-sm font-semibold text-accent">AED {pack.bulk.price}</div>
-                      <p className="text-xs text-muted-foreground">{pack.bulk.condition}</p>
-                    </div>
-                  )}
 
                   <p className="text-sm text-muted-foreground mb-4">{pack.description}</p>
 
@@ -141,28 +104,6 @@ const OrderPage = () => {
         </div>
       </section>
 
-      {/* Mega Bulk Section */}
-      <section className="py-16 bg-primary/5">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card rounded-2xl p-8 lg:p-12 border border-border text-center">
-              <h2 className="text-3xl font-bold mb-4 text-card-foreground">Need Bulk Orders?</h2>
-              <p className="text-lg text-muted-foreground mb-2">
-                <strong>Mega Bulk Carton:</strong> 1000 Bands
-              </p>
-              <p className="text-2xl font-bold text-accent mb-6">AED 50.00</p>
-              <p className="text-muted-foreground mb-8">
-                Perfect for FPOs, cooperatives, agricultural distributors, and government programs. 
-                Custom orders available with dedicated agronomist support.
-              </p>
-              <Button variant="default" size="lg" className="gap-2">
-                <Mail className="w-5 h-5" />
-                Contact Sales Team
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Benefits */}
       <section className="py-16">
