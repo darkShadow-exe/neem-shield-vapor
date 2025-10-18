@@ -26,21 +26,9 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-accent transition-colors">How It Works</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">FAQs</a></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
-            <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-accent transition-colors">Sales Inquiries</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Distributor Network</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Support</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Careers</a></li>
+              <li><a href="/how-it-works" className="hover:text-accent transition-colors">How It Works</a></li>
+              <li><a href="/order" className="hover:text-accent transition-colors">Pricing</a></li>
+              <li><a href="/faq" className="hover:text-accent transition-colors">FAQs</a></li>
             </ul>
           </div>
         </div>
