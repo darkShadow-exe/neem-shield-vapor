@@ -1,8 +1,6 @@
 import { TrendingUp, Users, Leaf, DollarSign } from "lucide-react";
-
 const Impact = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
+  return <section className="py-20 bg-gradient-to-b from-primary/5 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
@@ -30,7 +28,7 @@ const Impact = () => {
                 <Users className="w-8 h-8 text-accent" />
               </div>
               <div className="text-4xl font-bold text-foreground mb-2">50K+</div>
-              <p className="text-muted-foreground">Farmers Protected Their Crops</p>
+              <p className="text-muted-foreground">Potential Customers</p>
             </div>
 
             <div className="bg-card rounded-xl p-8 shadow-sm border border-border text-center">
@@ -77,8 +75,6 @@ const Impact = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Impact;
