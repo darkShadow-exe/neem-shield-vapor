@@ -35,9 +35,12 @@ const Hero = () => {
               variant="hero" 
               size="lg"
               className="text-lg px-8 py-6 h-auto"
+              asChild
             >
-              Get NeemShield Now
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Link to="/order">
+                Get NeemShield Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button 
               variant="outline" 

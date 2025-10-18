@@ -145,8 +145,14 @@ const OrderPage = () => {
             Join thousands of farmers who've chosen the natural path to pest-free farming.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg">
-              Place Your Order
+            <Button 
+              variant="hero" 
+              size="lg"
+              asChild
+            >
+              <a href="mailto:orders@neemshield.com?subject=Order%20Inquiry">
+                Place Your Order
+              </a>
             </Button>
             <Button 
               variant="outline" 

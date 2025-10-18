@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -28,17 +29,23 @@ const CTA = () => {
               variant="hero" 
               size="lg"
               className="text-lg px-10 py-6 h-auto"
+              asChild
             >
-              Order NeemShield Today
-              <ArrowRight className="ml-2 h-5 w-5" />
+              <Link to="/order">
+                Order NeemShield Today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
             <Button 
               variant="outline" 
               size="lg"
               className="text-lg px-10 py-6 h-auto bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20"
+              asChild
             >
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Sales Team
+              <a href="mailto:sales@neemshield.com">
+                <Mail className="mr-2 h-5 w-5" />
+                Contact Sales Team
+              </a>
             </Button>
           </div>
 

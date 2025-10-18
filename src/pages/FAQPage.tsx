@@ -132,8 +132,11 @@ const FAQPage = () => {
               variant="outline" 
               size="lg"
               className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20"
+              asChild
             >
-              Contact Support
+              <a href="mailto:support@neemshield.com?subject=Support%20Request">
+                Contact Support
+              </a>
             </Button>
           </div>
         </div>
