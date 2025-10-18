@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroCrops from "@/assets/hero-crops.jpg";
 
 const Hero = () => {
@@ -42,8 +43,9 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="text-lg px-8 py-6 h-auto bg-background/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-background/20"
+              asChild
             >
-              See How It Works
+              <Link to="/how-it-works">See How It Works</Link>
             </Button>
           </div>
 
