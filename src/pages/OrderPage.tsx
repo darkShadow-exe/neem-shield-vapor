@@ -150,7 +150,7 @@ const OrderPage = () => {
               <p className="text-lg text-muted-foreground mb-2">
                 <strong>Mega Bulk Carton:</strong> 1000 Bands
               </p>
-              <p className="text-2xl font-bold text-accent mb-6">AED 900.00</p>
+              <p className="text-2xl font-bold text-accent mb-6">AED 50.00</p>
               <p className="text-muted-foreground mb-8">
                 Perfect for FPOs, cooperatives, agricultural distributors, and government programs. 
                 Custom orders available with dedicated agronomist support.
